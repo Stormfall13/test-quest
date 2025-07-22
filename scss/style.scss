@@ -1,0 +1,210 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+    background: #131313;
+}
+:root{
+    --thin: 100;
+    --extra-light: 200;
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semi-bold: 600;
+    --bold: 700;
+    --extra-bold: 800;
+    --black: 900; 
+}
+@font-face {
+    font-family: 'Actay Wide';
+    src: url('../fonts/ActayWide-Bold.otf') format('opentype');
+    font-weight: var(--bold);
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Actay';
+    src: url('../fonts/Actay-Regular.otf') format('opentype');
+    font-weight: var(--regular);
+    font-style: normal;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li{
+        padding: 0;
+        margin: 0;
+    }
+}
+.app{
+    max-width: 1280px;
+    width: 100%;
+    min-height: 896px;
+    margin: 0 auto;
+    background: url('../img/bg1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 27px 0 32px 0;
+    .header__item{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .logo{
+        font-family: 'Actay Wide', sans-serif;
+        color: #fff;
+        font-size: 32px;
+        text-decoration: none;
+        max-width: 194px;
+        line-height: 34px;
+    }
+    .main__menu{
+        ul{
+            display: flex;
+            gap: 40px;
+            li{
+                a{
+                    font-family: 'Actay', sans-serif;
+                    font-size: 20px;
+                    color: #fff;
+                    text-decoration: none;
+                } 
+            }
+        }
+    }
+    .header__link{
+        font-family: 'Actay', sans-serif;
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+        display: flex;
+        gap: 20px;
+    }
+    .header__link::before{
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 173px;
+        bottom: 0;
+        background: #fff;
+
+    }
+}
+
+.content__wrapp{
+    .page__title{
+        font-family: 'Actay Wide', sans-serif;
+        font-size: 90px;
+        color: #fff;
+        max-width: 615px;
+        margin: 0 auto;
+    }
+    .steps{
+        max-width: 1140px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        .step__row{
+            border: 3px solid #fff;
+        }
+    }
+    .steps-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr); /* 12-колоночная сетка */
+        grid-auto-rows: minmax(100px, auto);
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+      }
+      
+      .step {
+        display: flex;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 16px 0px 16px 0;
+        padding: 12px 9px;
+        max-width: 292px;
+        width: 100%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      
+      .circle {
+        background: #7f963e;
+        color: white;
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        margin-right: 1rem;
+        flex-shrink: 0;
+      }
+      
+      /* Позиционирование элементов */
+      .step-1 {
+        grid-column: 1 / span 3;
+        grid-row: 1;
+      }
+      
+      .step-2 {
+        grid-column: 2 / span 3;
+        grid-row: 3;
+      }
+      
+      .step-3 {
+        grid-column: 4 / span 5;
+        grid-row: 4;
+        justify-self: end;
+      }
+      
+      .step-4 {
+        grid-column: 5 / span 5;
+        grid-row: 2;
+      }
+      
+      .step-5 {
+        grid-column: 9 / span 4;
+        grid-row: 2;
+        justify-self: end;
+      }
+      
+      .step-6 {
+        grid-column: 8 / span 5;
+        grid-row: 3;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+    .header{
+        width: auto;
+    }
+}
