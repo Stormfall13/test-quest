@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="scss/swiper-bundle.min.css">
 <link rel="stylesheet" href="scss/style.css">
 <title>Epc Hunters</title>
 </head>
@@ -20,14 +21,22 @@
     <div class="header__item">
         <a href="#" class="logo">Epc Hunters</a>
         <nav class="main__menu">
+          <div class="close__burger">
+            Loren Ipsum
+            <img src="img/close.svg" alt="">
+          </div>
           <ul>
-            <li><a href="#">Loren Ipsum</a></li>
-            <li><a href="#">Loren Ipsum</a></li>
-            <li><a href="#">Loren Ipsum</a></li>
+            <li><a href="#" class="link__menu">Loren Ipsum</a></li>
+            <li><a href="#" class="link__menu">Loren Ipsum</a></li>
+            <li><a href="#" class="link__menu">Loren Ipsum</a></li>
           </ul>
+          <a href="#" class="burger__link">
+              LOREN IPSUM
+              <img src="img/arrow.svg" alt="arrow">
+          </a>
         </nav> 
-        <div class="burger"><img src="img/burger.svg" alt=""></div>
       </div>
+      <div class="burger"><img src="img/burger.svg" alt=""></div>
         <a href="#" class="header__link">
             LOREN IPSUM
             <img src="img/arrow.svg" alt="arrow">
@@ -80,6 +89,80 @@
               </div>
         </div> 
     </div>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="step">
+            <div class="circle">1</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <div class="step__items">
+              <img src="img/Vector.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="step">
+            <div class="circle">2</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <div class="step__items">
+              <img src="img/Vector.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="step">
+            <div class="circle">3</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <div class="step__items">
+              <img src="img/Vector.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="step">
+            <div class="circle">4</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <div class="step__items">
+              <img src="img/Vector.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="step">
+            <div class="circle">5</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <div class="step__items">
+              <img src="img/Vector.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="step">
+            <div class="circle">6</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <div class="step__items">
+              <img src="img/Vector.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn__wrapp">
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev">
+          <img src="img/arrow-prev.svg" alt="">
+          loren ipsum
+        </div>
+        <div class="swiper-button-next">
+          loren ipsum
+          <img src="img/arrow-next.svg" alt="">
+        </div>
+      </div>
+    </div> 
+
     <div class="wrapp__btn">
       <div class="info">INFO</div>
     </div>
@@ -103,6 +186,7 @@
     impedit molestiae ut enim!
   </p>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
